@@ -58,14 +58,12 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.4.1</version>
 				<configuration>
-					<imageName>${docker.image.prefix}/${project.artifactId}
-					</imageName>
+					<imageName>${docker.image.prefix}/${project.artifactId}</imageName>
 					<dockerDirectory>src/main/resources/docker</dockerDirectory>
 					<resources>
 						<resource>
 							<targetPath>/</targetPath>
-							<directory>${project.build.directory}
-							</directory>
+							<directory>${project.build.directory}</directory>
 							<include>${project.build.finalName}.jar
 							</include>
 						</resource>
